@@ -27,8 +27,16 @@ Consider the below example where we want to find the Last Year Fiscal Date (LY) 
 
 ( Note : Please refer the fiscal calendar 454 for more details )
 
+| This Year week | Last Year week |Time difference |
+| ---------------| -------------- |----------------|
+| 2018-02-18     | 2017-02-19     |  371 DAY       |
+| 2018-01-31     | 2017-01-01     |  364 DAY       |
+
 Hardcoding of this data directly into the main query may cause the troubles for future as we will have to alter the duration every now and then in multiple queries which is not feasible and it may cause the manual errors as well.
 
+#### Step 1: Creating object ( separate view)
+Write the object (source code) as separate view in BigQuery which we may need to modify in future.
+View to find TY and LY date
 ```
 select a.time, TY, LY from
 (
@@ -41,3 +49,6 @@ dataset.project.dim_date_454`
 where date(fiscal_week_start_date) = DATE_ADD(current_date(), INTERVAL -EXTRACT(DAYOFWEEK FROM current_date())-6 - 364 DAY)) as b
 on a.time = b.time)
 ```
+#### step 2: How we can add this to main code:
+- Simply, join the source code with the main code.
+- So that the changes in the source code will be reflected in all the main codes where we have implemented this.

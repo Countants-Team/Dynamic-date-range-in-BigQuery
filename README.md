@@ -18,10 +18,10 @@ In the real world, an object is anything that is well-defined; say a car, a bat,
 - Code reuse and recycling - objects created for OOP can be easily reused in other programs.
 - Maintenance of project becomes easy, as minor change in definitions require little modification rather than complete change  in whole project.
 
-![alt text](https://drive.google.com/uc?id=1JN8GF8sAeOMBe3snMXRbNLnhoSqIiWn4)
+##### Single object is reused in multiple programs as shown below:
 
-(Single object is reused in multiple programs)
-         
+![alt text](https://drive.google.com/uc?id=1JN8GF8sAeOMBe3snMXRbNLnhoSqIiWn4)
+        
 #### How to Implement?
 #### Example :
 Consider the below example where we want to find the Last Year Fiscal Date (LY) correspond to the This Year Fiscal Date (TY) in multiple queries. But, the duration between the “Last Year” and “This year” dates is not constant i.e it can be either 364 days or 371 days.

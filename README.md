@@ -26,7 +26,7 @@ In the real world, an object is anything that is well-defined; say a car, a bat,
 #### Example :
 Consider the below example where we want to find the Last Year Fiscal Date (LY) correspond to the This Year Fiscal Date (TY) in multiple queries. But, the duration between the “Last Year” and “This year” dates is not constant i.e it can be either 364 days or 371 days.
 
-( Note : Please refer the fiscal calendar 454 for more details )
+( Note : Please [refer](https://docs.google.com/spreadsheets/d/1X1OqY_XK_q3AFaSwB9y_XDSphMEB2IXa1wQE7jiRfx0/edit?usp=sharing) the fiscal calendar 454 for more details )
 
 | This Year week | Last Year week |Time difference |
 | ---------------| -------------- |----------------|

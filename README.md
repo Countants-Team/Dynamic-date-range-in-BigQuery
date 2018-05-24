@@ -19,7 +19,8 @@ In the real world, an object is anything that is well-defined; say a car, a bat,
 - Maintenance of project becomes easy, as minor change in definitions require little modification rather than complete change  in whole project.
 
 ![alt text](https://drive.google.com/uc?id=1JN8GF8sAeOMBe3snMXRbNLnhoSqIiWn4)
-         (Single object is reused in multiple programs)
+
+(Single object is reused in multiple programs)
          
 #### How to Implement?
 #### Example :

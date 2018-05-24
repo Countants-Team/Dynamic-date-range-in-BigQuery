@@ -50,6 +50,6 @@ dataset.project.dim_date_454`
 where date(fiscal_week_start_date) = DATE_ADD(current_date(), INTERVAL -EXTRACT(DAYOFWEEK FROM current_date())-6 - 364 DAY)) as b
 on a.time = b.time)
 ```
-#### step 2: How we can add this to main code:
+#### Step 2: How we can add this to main code
 - Simply, join the source code with the main code.
 - So that the changes in the source code will be reflected in all the main codes where we have implemented this.

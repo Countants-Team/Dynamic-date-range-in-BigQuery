@@ -1,4 +1,4 @@
-# OOPS-in-BigQuery
+# Dynamic date range in BigQuery
 
 #### Implementing the OOPS in Bigquery to easily modify and maintain the code over time.
 

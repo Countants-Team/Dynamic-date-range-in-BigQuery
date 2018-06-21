@@ -4,7 +4,7 @@ We come across various scenarios in database system where we want to compare two
 
 Hardcoding of dates directly into the main query may cause the troubles for future as we will have to alter the duration every now and then in multiple queries which is not feasible and it may cause the manual errors as well.
     
-This can be solved by creating the source view separately which cab be then joined with the main code. So that, any changes made in the source code will be reflected in the main code and can be resued in multiple programs.
+This can be solved by creating the source view separately which cab be then joined with the main code. So that, any changes made in the source code will be reflected in the main code and can be reused in multiple programs.
 
 #### Example :
 Consider the below example where we want to find the Last Year Fiscal Date (LY) correspond to the This Year Fiscal Date (TY) in multiple queries. But, the duration between the “Last Year” and “This year” dates is not constant i.e it can be either 364 days or 371 days.
